@@ -1,6 +1,6 @@
 {
   "name": "@anny.co/vue-lic",
-  "version": "0.2.2",
+  "version": "1.0.0",
   "description": "A VueJS plugin for the LinkedIn campaign analytics to be used as a module for Nuxt applications",
   "author": {
     "name": "Alexander Bartolomey",
