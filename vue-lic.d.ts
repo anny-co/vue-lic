@@ -17,7 +17,7 @@ declare module "@anny.co/vue-lic" {
 
   export type Dictionary<T> = { [key: string]: T };
 
-  export interface VueLic {
+  export interface VueLIC {
     optIn: LicOptInOut;
     optOut: LicOptInOut;
     initialize: LicInitialize;
@@ -40,14 +40,14 @@ declare module "@anny.co/vue-lic" {
     };
   }
 
-  export class VueLicPlugin {
+  export class VueLICPlugin {
     static install(Vue: typeof _Vue, options: Options): void;
   }
 
   export function bootstrap(): Promise<Lic.Lic>;
   export function setOptions(options: Partial<Options>): void;
 
-  export default VueLicPlugin;
+  export default VueLICPlugin;
 
   export const init: LicInitialize;
   export const optIn: LicOptInOut;
@@ -55,7 +55,7 @@ declare module "@anny.co/vue-lic" {
 
   module "vue/types/vue" {
     interface Vue {
-      $lic: VueLic;
+      $lic: VueLIC;
     }
   }
 }
