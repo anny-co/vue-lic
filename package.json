@@ -54,9 +54,9 @@
   "module": "./dist/index.esm.js",
   "unpkg": "./dist/index.umd.js",
   "jsdelivr": "./dist/index.umd.js",
-  "types": "./vue-linkedin-pixel.d.ts",
+  "types": "./vue-lic.d.ts",
   "files": [
     "dist",
-    "vue-linkedin-pixel.d.ts"
+    "vue-lic.d.ts"
   ]
 }
