@@ -5,13 +5,11 @@ declare module "@anny.co/vue-lic" {
 
   namespace Lic {
     interface Lic {
-      (command: "event", eventName: string, object: string): void;
+      (): void;
     }
   }
 
   export type LicOptInOut = () => void;
-
-  export type LicEvent = (verb: string, object: string) => void;
 
   export type LicInitialize = () => void;
 
@@ -44,7 +42,7 @@ declare module "@anny.co/vue-lic" {
     static install(Vue: typeof _Vue, options: Options): void;
   }
 
-  export function bootstrap(): Promise<Lic.Lic>;
+  export function bootstrap(): Promise<() => void>;
   export function setOptions(options: Partial<Options>): void;
 
   export default VueLICPlugin;
