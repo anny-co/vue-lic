@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    /* Visit https://aka.ms/tsconfig.json to read more about this file */
     "target": "ES2019",
     "module": "ES6",
     "lib": [
@@ -10,11 +9,11 @@
     ],
     "declaration": true,
     "sourceMap": true,
-    "outDir": "./dist",
-    "rootDir": "./",
+    "baseUrl": "./",
     "strict": true,
+    "noEmit": true,
     "noImplicitAny": false,
-    "moduleResolution": "Node",
+    "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
@@ -23,5 +22,8 @@
   },
   "exclude": [
     "./bili.config.ts"
+  ],
+  "include": [
+    "./src/**.ts"
   ]
 }
